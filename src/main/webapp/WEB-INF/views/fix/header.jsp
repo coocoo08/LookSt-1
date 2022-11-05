@@ -6,26 +6,46 @@
 <meta charset="UTF-8">
 <title>LookSt</title>
 	<!-- CSS only -->
-	<link href="${pageContext.request.contextPath }/resources/bootstrap/css/bootstrap.css" rel="stylesheet">
-	<link href="${pageContext.request.contextPath }/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="${pageContext.request.contextPath }/resources/bootstrap/css/bootstrap.rtl.css" rel="stylesheet">
-	<link href="${pageContext.request.contextPath }/resources/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet">
-	<link href="${pageContext.request.contextPath }/resources/bootstrap/css/bootstrap-grid.css" rel="stylesheet">
-	<link href="${pageContext.request.contextPath }/resources/bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
-	<link href="${pageContext.request.contextPath }/resources/bootstrap/css/bootstrap-grid.rtl.css" rel="stylesheet">
-	<link href="${pageContext.request.contextPath }/resources/bootstrap/css/bootstrap-grid.rtl.min.css" rel="stylesheet">
-	<link href="${pageContext.request.contextPath }/resources/bootstrap/css/bootstrap-reboot.css" rel="stylesheet">
-	<link href="${pageContext.request.contextPath }/resources/bootstrap/css/bootstrap-reboot.min.css" rel="stylesheet">
-	<link href="${pageContext.request.contextPath }/resources/bootstrap/css/bootstrap-reboot.rtl.css" rel="stylesheet">
-	<link href="${pageContext.request.contextPath }/resources/bootstrap/css/bootstrap-reboot.rtl.min.css" rel="stylesheet">
-	<link href="${pageContext.request.contextPath }/resources/bootstrap/css/bootstrap-utilities.css" rel="stylesheet">
-	<link href="${pageContext.request.contextPath }/resources/bootstrap/css/bootstrap-utilities.min.css" rel="stylesheet">
-	<link href="${pageContext.request.contextPath }/resources/bootstrap/css/bootstrap-utilities.rtl.css" rel="stylesheet">
-	<link href="${pageContext.request.contextPath }/resources/bootstrap/css/bootstrap-utilities.rtl.min.css" rel="stylesheet">
-	<link href="${pageContext.request.contextPath }/resources/lux/css/bootstrap.css" rel="stylesheet">
-	<link href="${pageContext.request.contextPath }/resources/lux/css/bootstrap-icons.css" rel="stylesheet">
-	<link href="${pageContext.request.contextPath }/resources/lux/css/custom.min.css" rel="stylesheet">
-	<link href="${pageContext.request.contextPath }/resources/lux/css/prism-okaidia.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/resources/5/lux/_bootswatch.scss" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/resources/5/lux/_variables.scss" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/resources/5/lux/bootstrap.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/resources/5/lux/bootstrap.min.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/resources/_assets/css/custom.min.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/resources/_assets/scss/custom.scss" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/resources/_vendor/bootstrap/dist/css/bootstrap-grid.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/resources/_vendor/bootstrap/dist/css/bootstrap-grid.min.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/resources/_vendor/bootstrap/dist/css/bootstrap-grid.rtl.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/resources/_vendor/bootstrap/dist/css/bootstrap-grid.rtl.min.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/resources/_vendor/bootstrap/dist/css/bootstrap-reboot.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/resources/_vendor/bootstrap/dist/css/bootstrap-reboot.min.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/resources/_vendor/bootstrap/dist/css/bootstrap-reboot.rtl.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/resources/_vendor/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/resources/_vendor/bootstrap/dist/css/bootstrap-utilities.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/resources/_vendor/bootstrap/dist/css/bootstrap-utilities.min.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/resources/_vendor/bootstrap/dist/css/bootstrap-utilities.rtl.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/resources/_vendor/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/resources/_vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/resources/_vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  	<link href="${pageContext.request.contextPath }/resources/_vendor/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet">
+  	<link href="${pageContext.request.contextPath }/resources/_vendor/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  	<link href="${pageContext.request.contextPath }/resources/_vendor/prismjs/themes/prism-okaidia.css" rel="stylesheet">
+<!-- 	<script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.2/dist/lux/_bootswatch.scss" rel="stylesheet" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.2/dist/lux/_variables.scss" rel="stylesheet" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.2/dist/lux/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.2/dist/lux/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+    <script type="importmap">
+    {
+      "imports": {
+        "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js",
+        "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.esm.min.js"
+      }
+    }
+    </script>
+
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -37,7 +57,7 @@
     <div class="collapse navbar-collapse" id="navbarColor03">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Home
+          <a class="nav-link active" href="https://www.naver.com">Home
             <span class="visually-hidden">(current)</span>
           </a>
         </li>

@@ -77,15 +77,17 @@
   </footer><!-- End Footer -->
   <!-- End Footer -->
 </body>
-  <script src="${pageContext.request.contextPath }/resources/bootstrap/js/bootstrap.bundle.js"></script>
-  <script src="${pageContext.request.contextPath }/resources/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="${pageContext.request.contextPath }/resources/bootstrap/js/bootstrap.esm.js"></script>
-  <script src="${pageContext.request.contextPath }/resources/bootstrap/js/bootstrap.esm.min.js"></script>
-  <script src="${pageContext.request.contextPath }/resources/bootstrap/js/bootstrap.bootstrap.js"></script>
-  <script src="${pageContext.request.contextPath }/resources/bootstrap/js/bootstrap.min.js"></script>
-  <script src="${pageContext.request.contextPath }/resources/lux/js/prism.js"></script>
-  <script src="${pageContext.request.contextPath }/resources/lux/js/custom.js"></script>
-
-
+  <script type="module" src="${pageContext.request.contextPath }/resources/_vendor/bootstrap/dist/js/bootstrap.esm.js"></script>
+  <script type="module" src="${pageContext.request.contextPath }/resources/_vendor/bootstrap/dist/js/bootstrap.esm.min.js"></script>
+  <script src="${pageContext.request.contextPath }/resources/_assets/js/custom.js"></script>
+  <script src="${pageContext.request.contextPath }/resources/_vendor/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="${pageContext.request.contextPath }/resources/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="${pageContext.request.contextPath }/resources/_vendor/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="${pageContext.request.contextPath }/resources/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="${pageContext.request.contextPath }/resources/_vendor/jquery/dist/jquery.js"></script>
+  <script src="${pageContext.request.contextPath }/resources/_vendor/jquery/dist/jquery.min.js"></script>
+  <script src="${pageContext.request.contextPath }/resources/_vendor/jquery/dist/jquery.slim.js"></script>
+  <script src="${pageContext.request.contextPath }/resources/_vendor/jquery/dist/jquery.slim.min.js"></script>
+  <script src="${pageContext.request.contextPath }/resources/_vendor/prismjs/prism.js"></script>
 
 </html>
