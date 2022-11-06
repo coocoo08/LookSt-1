@@ -240,7 +240,7 @@
 <!-- End Footer -->
 </body>
 <script type="text/javascript" src="${pageContext.request.contextPath }/resources/Bootswatch/_vendor/bootstrap/dist/js/bootstrap.bundle.js"></script>
-
+<script type="text/javascript" src="${pageContext.request.contextPath }/resources/fix/js/header.js"></script>
 <%--  <script type="module" src="${pageContext.request.contextPath }/resources/_vendor/bootstrap/dist/js/bootstrap.esm.js"></script>
   <script type="module" src="${pageContext.request.contextPath }/resources/_vendor/bootstrap/dist/js/bootstrap.esm.min.js"></script>
   <script type="text/javascript" src="${pageContext.request.contextPath }/resources/_assets/js/custom.js"></script>
