@@ -10,18 +10,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%@ include file="/WEB-INF/views/fix/header.jsp" %>
-	<div class="container">
-		<ul class="nav nav-pills justify-content-center">
-	        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">인기</a></li>
-	        <li class="nav-item"><a href="#" class="nav-link">최신</a></li>
-	        <li class="nav-item"><a href="#" class="nav-link">팔로우</a></li>
-      	</ul>
-	</div>
-
-
-
-<a href="<c:url value="/admin/memberlist"/>">admin</a>
-<%@ include file="/WEB-INF/views/fix/footer.jsp" %>
+안녕하세요
 </body>
 </html>
