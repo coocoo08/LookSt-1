@@ -1,7 +1,15 @@
 package kr.co.lookst.controller;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/sns")
 public class SnsController {
-	public SnsController() {
-		// 이거 테스트해보는거에용~!
+	
+	@GetMapping("/test")
+	public String snsForm() {
+		return "sns/test";
 	}
 }
