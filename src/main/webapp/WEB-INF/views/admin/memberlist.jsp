@@ -6,10 +6,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+	<link href="${pageContext.request.contextPath }/resources/fix/css/header.css" rel="stylesheet">
 </head>
 <body>
 <%@ include file="/WEB-INF/views/fix/header.jsp" %>
 <div class="docs-main">
+수정
 		<h2>(Only the) Stack Table</h2>
 		<p>If you only want to use the Stack Table and don’t want all the extra features and modes packaged with the full Tablesaw (save yourself some bytes), we do provide a Stack-Only version shown below.</p>
 		<p>The Stack Table stacks the table headers to a two column layout with headers on the left. Resize your viewport to across the 40em (640px) breakpoint to see the change.</p>

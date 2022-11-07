@@ -8,7 +8,24 @@ public class BoardController {
 
 	@RequestMapping("/Board")
 	public String BoardMain(){
-		return "board/test";
+		return "board/BoardList";
+		
+	}
+	@RequestMapping("/post1")
+	public String post(){
+		return "board/post1";
+		
+	}
+	
+	@RequestMapping("/submit")
+	public String submit(){
+		return "board/submit";
+		
+	}
+	
+	@RequestMapping("/notice1")
+	public String notice(){
+		return "board/notice1";
 		
 	}
 }

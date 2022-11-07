@@ -10,6 +10,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-안녕하세요
+<%@ include file="/WEB-INF/views/fix/header.jsp" %>
+안녕하세요!! World!
+<%@ include file="/WEB-INF/views/fix/footer.jsp" %>
 </body>
 </html>
