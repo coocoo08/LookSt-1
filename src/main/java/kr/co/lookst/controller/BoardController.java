@@ -22,4 +22,10 @@ public class BoardController {
 		return "board/submit";
 		
 	}
+	
+	@RequestMapping("/notice1")
+	public String notice(){
+		return "board/notice1";
+		
+	}
 }

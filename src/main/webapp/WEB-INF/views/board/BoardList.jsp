@@ -34,7 +34,42 @@
 				<div class="tab-pane fade show active" id="pills-home"
 					role="tabpanel" aria-labelledby="pills-home-tab">
 					<!-- 공지사항 -->
-
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">번호</th>
+								<th scope="col">제목</th>
+								<th scope="col">날짜</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td><a href="/lookst/notice1" style="text-decoration: none;">개인정보 취급방침 변경안내</td>
+								<td>$"{reg_date}" </td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>[공지] 정산 지연 안내</td>
+								<td>$"{reg_date}" </td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>[공지] 서비스 수수료 안내</td>
+								<td>$"{reg_date}" </td>
+							</tr>
+							<tr>
+								<th scope="row">4</th>
+								<td>[공지] 10월 거래 혜택 이벤트 안내</td>
+								<td>$"{reg_date}" </td>
+							</tr>
+							<tr>
+								<th scope="row">5</th>
+								<td>[공지] 서비스 수수료 안내</td>
+								<td>$"{reg_date}" </td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 				<!-- FAQ 아코디언 -->
 				<div class="tab-pane fade" id="pills-profile" role="tabpanel"
@@ -193,7 +228,8 @@
 							</tr>
 						</tbody>
 					</table>
-					<a href="/lookst/submit"><iuput type="submit" class="btn btn-primary" style="float:right;">Submit</a>
+					<a href="/lookst/submit"><iuput type="submit"
+							class="btn btn-primary" style="float:right;">Submit</a>
 					<nav aria-label="Page navigation example">
 						<ul class="pagination justify-content-center mt-5">
 							<li class="page-item disabled"><a class="page-link">Previous</a>
