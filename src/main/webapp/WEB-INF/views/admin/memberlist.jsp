@@ -6,6 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+	<link href="${pageContext.request.contextPath }/resources/fix/css/header.css" rel="stylesheet">
 </head>
 <body>
 <%@ include file="/WEB-INF/views/fix/header.jsp" %>
