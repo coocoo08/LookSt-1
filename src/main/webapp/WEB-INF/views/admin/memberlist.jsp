@@ -6,32 +6,34 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-	<link href="${pageContext.request.contextPath }/resources/fix/css/header.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/resources/admin/css/demo.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/resources/admin/css/tablesaw.css" rel="stylesheet">
 </head>
 <body>
 <%@ include file="/WEB-INF/views/fix/header.jsp" %>
 <div class="docs-main">
-수정
-		<h2>(Only the) Stack Table</h2>
-		<p>If you only want to use the Stack Table and don’t want all the extra features and modes packaged with the full Tablesaw (save yourself some bytes), we do provide a Stack-Only version shown below.</p>
-		<p>The Stack Table stacks the table headers to a two column layout with headers on the left. Resize your viewport to across the 40em (640px) breakpoint to see the change.</p>
+		<h2>멤버 관리</h2>
 		<table class="tablesaw tablesaw-stack" data-tablesaw-mode="stack">
 			<thead>
 				<tr>
-					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist">Movie Title</th>
-					<th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3">Rank</th>
-					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Year</th>
-					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1"><abbr title="Rotten Tomato Rating">Rating</abbr></th>
-					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Gross</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist">프로필</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="1">아이디</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">이름</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3"><abbr title="Rotten Tomato Rating">가입일</abbr></th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">최근 접속일</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="5">권한</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="6">관리</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<td class="title"><a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">Avatar</a></td>
-					<td>1</td>
-					<td>2009</td>
-					<td>83%</td>
-					<td>$2.7B</td>
+					<td class="profile"><img href=""></td>
+					<td class="id"><a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">Avatar</a></td>
+					<td class="name">2009</td>
+					<td class="since">83%</td>
+					<td class="title">$2.7B</td>
+					<td class="title">$2.7B</td>
+					<td class="title">$2.7B</td>
 				</tr>
 				<tr>
 					<td class="title"><a href="http://en.wikipedia.org/wiki/Titanic_(1997_film)">Titanic</a></td>
@@ -99,6 +101,8 @@
 			</tbody>
 		</table>
 	</div>
+	<script type="text/javascript" src="${pageContext.request.contextPath }/resources/admin/js/tablesaw.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath }/resources/admin/js/tablesaw-init.js"></script>
 	<%@ include file="/WEB-INF/views/fix/footer.jsp" %>
 </body>
 </html>
