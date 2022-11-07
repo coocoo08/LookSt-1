@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -17,7 +16,6 @@
 </head>
 <body>
 <%@ include file="/WEB-INF/views/fix/header.jsp" %>
-	<%@ include file="/WEB-INF/views/fix/header.jsp"%>
 
 	<div class="container">
 		<ul class="nav nav-pills justify-content-center">
@@ -62,7 +60,5 @@
 
 <a href="<c:url value="/admin/memberlist"/>">admin</a>
 <%@ include file="/WEB-INF/views/fix/footer.jsp" %>
-	<a href="<c:url value="/admin/memberlist"/>">admin</a>
-	<%@ include file="/WEB-INF/views/fix/footer.jsp"%>
 </body>
 </html>
