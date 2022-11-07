@@ -11,7 +11,7 @@
 </head>
 <body>
 <%@ include file="/WEB-INF/views/fix/header.jsp" %>
-안녕하세요!! World!!
+안녕하세요!! World!
 <%@ include file="/WEB-INF/views/fix/footer.jsp" %>
 </body>
 </html>
