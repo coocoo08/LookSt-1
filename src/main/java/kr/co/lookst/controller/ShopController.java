@@ -1,5 +1,5 @@
 package kr.co.lookst.controller;
 
-public class ShopController2 {
+public class ShopController {
 
 }

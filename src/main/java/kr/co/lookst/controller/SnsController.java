@@ -2,6 +2,6 @@ package kr.co.lookst.controller;
 
 public class SnsController {
 	public SnsController() {
-		// TODO Auto-generated constructor stub
+		// 이거 테스트해보는거에용~!
 	}
 }
