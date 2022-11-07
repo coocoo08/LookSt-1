@@ -13,6 +13,7 @@
 
 <P>  The time on the server is ${serverTime}. </P>
 <a href="<c:url value="/admin/memberlist"/>">admin</a>
+<a href="<c:url value="/sns/test"/>">sns test</a>
 <%@ include file="/WEB-INF/views/fix/footer.jsp" %>
 </body>
 </html>
