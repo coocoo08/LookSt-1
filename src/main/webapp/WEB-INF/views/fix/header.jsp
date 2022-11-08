@@ -72,7 +72,7 @@
           <div class="dropdown-menu dropdown-menu-end dropdown-menu-xs-start">
             <a class="dropdown-item" href="#">MAGAZIN</a>
             <a class="dropdown-item" href="#">REVIEW</a>
-            <a class="dropdown-item" href="#">FAQ</a>
+            <a class="dropdown-item" href="/lookst/board/list">NOTICE</a>
           </div>
         </li>
         <li class="nav-item dropdown">
