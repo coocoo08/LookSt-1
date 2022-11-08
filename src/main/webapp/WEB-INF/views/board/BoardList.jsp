@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -45,28 +49,29 @@
 						<tbody>
 							<tr>
 								<th scope="row">1</th>
-								<td><a href="/lookst/notice1" style="text-decoration: none;">개인정보 취급방침 변경안내</td>
-								<td>$"{reg_date}" </td>
+								<td><a href="/lookst/board/notice1"
+									style="text-decoration: none;">개인정보 취급방침 변경안내</td>
+								<td>$"{reg_date}"</td>
 							</tr>
 							<tr>
 								<th scope="row">2</th>
 								<td>[공지] 정산 지연 안내</td>
-								<td>$"{reg_date}" </td>
+								<td>$"{reg_date}"</td>
 							</tr>
 							<tr>
 								<th scope="row">3</th>
 								<td>[공지] 서비스 수수료 안내</td>
-								<td>$"{reg_date}" </td>
+								<td>$"{reg_date}"</td>
 							</tr>
 							<tr>
 								<th scope="row">4</th>
 								<td>[공지] 10월 거래 혜택 이벤트 안내</td>
-								<td>$"{reg_date}" </td>
+								<td>$"{reg_date}"</td>
 							</tr>
 							<tr>
 								<th scope="row">5</th>
 								<td>[공지] 서비스 수수료 안내</td>
-								<td>$"{reg_date}" </td>
+								<td>$"{reg_date}"</td>
 							</tr>
 						</tbody>
 					</table>
@@ -192,7 +197,7 @@
 						<tbody>
 							<tr>
 								<th scope="row">1</th>
-								<td><a href="/lookst/post1" style="text-decoration: none">오늘
+								<td><a href="/lookst/board/post1" style="text-decoration: none">오늘
 										점심 뭐 먹는 게 좋은 지 골라주세요.</a></td>
 								<td>배고픈 아이</td>
 								<td>$"{boardDto.reg_date }"</td>
@@ -210,13 +215,13 @@
 								<td>오늘 뭐 해야 되는 지 알려주세요.</td>
 								<td>정말 심심한 아이</td>
 								<td>$"{boardDto.reg_date }"</td>
-								<td>$"{boardDto.view_cnt }"</td>
+								<td>${boardDto.view_cnt }</td>
 							</tr>
 							<tr>
 								<th scope="row">4</th>
 								<td>오늘 뭐 봐야 되는 지 알려주세요.</td>
 								<td>뭐든 보고픈 아이</td>
-								<td>$"{boardDto.reg_date }"</td>
+								<td>${boardDto.reg_date }</td>
 								<td>$"{boardDto.view_cnt }"</td>
 							</tr>
 							<tr>
@@ -228,7 +233,7 @@
 							</tr>
 						</tbody>
 					</table>
-					<a href="/lookst/submit"><iuput type="submit"
+					<a href="/lookst/board/submit"><iuput type="submit"
 							class="btn btn-primary" style="float:right;">Submit</a>
 					<nav aria-label="Page navigation example">
 						<ul class="pagination justify-content-center mt-5">
