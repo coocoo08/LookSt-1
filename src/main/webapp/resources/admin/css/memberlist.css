@@ -1,4 +1,16 @@
 @charset "UTF-8";
-.admintable td, .admintable th {
-	padding : 0;
+/* td #profile {
+	width: 75px; height: 75px;
+} */
+
+#profile-result {
+	max-width: 75px; height: 75px;
+}
+
+#table-width>:not(caption)>*>*{
+	
+}
+
+#table-width td, #table-width th{
+	padding : 0.5rem 0.5rem;
 }
