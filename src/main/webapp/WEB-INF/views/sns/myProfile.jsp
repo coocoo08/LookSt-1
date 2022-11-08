@@ -7,14 +7,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-<title>myProfile</title>
+<title>마이프로필</title>
 </head>
 <body>
 <%@ include file="/WEB-INF/views/fix/header.jsp" %>
+	<!-- 바디 시작 -->
 	<div class="container">
-		<!-- Content here -->
+		<div class="row justify-content-md-center">My Profile</div>
 	</div>
-<%@ include file="/WEB-INF/views/fix/footer.jsp" %>
+<%-- <%@ include file="/WEB-INF/views/fix/footer.jsp" %> --%>
 </body>
 </html>
 
