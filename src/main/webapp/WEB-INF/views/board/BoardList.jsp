@@ -31,7 +31,7 @@
 					<button class="nav-link" id="pills-contact-tab"
 						data-bs-toggle="pill" data-bs-target="#pills-contact"
 						type="button" role="tab" aria-controls="pills-contact"
-						aria-selected="false">QNA</button>
+						aria-selected="false">Q&A</button>
 				</li>
 			</ul>
 			<div class="tab-content" id="pills-tabContent">
@@ -179,11 +179,13 @@
 				<div class="tab-pane fade my-4" id="pills-contact" role="tabpanel"
 					aria-labelledby="pills-contact-tab">
 					<!-- QNA -->
-					<form class="d-flex">
+					<nav class="navbar navbar-expand-md navbar-dark" style="float:right;">
+					<form class="d-flex" >
 						<input class="form-control me-2" type="search"
 							placeholder="Search" aria-label="Search">
 						<button class="btn btn-outline-success" type="submit">Search</button>
 					</form>
+					</nav>
 					<table class="table table-hover mt-5">
 						<thead>
 							<tr>
