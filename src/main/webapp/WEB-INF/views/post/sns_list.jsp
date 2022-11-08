@@ -24,7 +24,7 @@
 	        <li class="nav-item"><a href="#" class="nav-link">팔로우</a></li>
       	</ul>
 	<!-- 상단 인기/최신/팔로우 탭 -->
-		<ul class="nav nav-pills mb-3 mt-4 justify-content-center" id="pills-tab" role="tablist">
+		<ul class="nav nav-pills col-4 mx-auto my-4" id="pills-tab" role="tablist">
 			<li class="nav-item" role="presentation">
 				<button class="nav-link active" id="pills-home-tab"
 					data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
