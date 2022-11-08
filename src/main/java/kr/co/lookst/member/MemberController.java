@@ -1,4 +1,4 @@
-package kr.co.lookst.controller;
+package kr.co.lookst.member;
 
 public class MemberController {
 

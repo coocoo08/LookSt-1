@@ -1,15 +1,16 @@
-package kr.co.lookst.controller;
+package kr.co.lookst.seller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/sns")
-public class SnsController {
-	
+@RequestMapping("/seller")
+public class SellerController {
+
 	@GetMapping("/test")
-	public String snsForm() {
-		return "sns/test";
+	public String adminForm() {
+		return "seller/test";
+
 	}
 }

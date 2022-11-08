@@ -1,16 +1,15 @@
-package kr.co.lookst.controller;
+package kr.co.lookst.admin;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/seller")
-public class SellerController {
+@RequestMapping("/admin")
+public class AdminController {
 
-	@GetMapping("/test")
+	@GetMapping("/memberlist")
 	public String adminForm() {
-		return "seller/test";
-
+		return "admin/memberlist";
 	}
 }

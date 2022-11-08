@@ -1,4 +1,4 @@
-package kr.co.lookst.controller;
+package kr.co.lookst.board;
 
 import java.util.HashMap;
 import java.util.List;

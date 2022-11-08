@@ -1,4 +1,4 @@
-package kr.co.lookst;
+package kr.co.lookst.main;
 
 import java.text.DateFormat;
 import java.util.Date;
