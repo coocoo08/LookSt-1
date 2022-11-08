@@ -1,0 +1,4 @@
+@charset "UTF-8";
+.admintable td, .admintable th {
+	padding : 0;
+}

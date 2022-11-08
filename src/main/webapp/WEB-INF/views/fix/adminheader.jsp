@@ -39,78 +39,48 @@
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
     <a class="navbar-brand" href="<c:url value="/"/>">LookSt</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
-    <div class="collapse navbar-collapse" id="navbarColor03">
-	    <ul class="navbar-nav ms-auto">
-	    <!-- 다크모드 시작-->
-		  <!-- <div class="wrap ms-auto">
-		      <div class="darkmode">
-		          <div class="inner">
-		              <input type="radio" name="toggle" id="toggle-radio-light" checked><label for="toggle-radio-light" class="tolight"><i class="fas fa-sun tolight fa-xs"></i></label>
-		              <input type="radio" name="toggle" id="toggle-radio-dark"><label for="toggle-radio-dark" class="todark"><i class="fas fa-moon todark fa-xs"></i></label>
-		              <div class="darkmode-bg"></div>
-		          </div>
-		      </div>
-		  </div> -->
-		  <!-- 다크모드 끝 -->
-	        <li class="nav-item">
-	          <a class="nav-link" href="#">SNS
-	            <!-- <span class="visually-hidden">(current)</span> -->
-	          </a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#">SHOP</a>
-	        </li>
-	        <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Board</a>
-	          <div class="dropdown-menu dropdown-menu-end dropdown-menu-xs-start">
-	            <a class="dropdown-item" href="#">MAGAZIN</a>
-	            <a class="dropdown-item" href="#">REVIEW</a>
-	            <a class="dropdown-item" href="#">FAQ</a>
+    
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav ms-auto">
+      <!-- 다크모드 시작-->
+	  <!-- <div class="wrap ms-auto">
+	      <div class="darkmode">
+	          <div class="inner">
+	              <input type="radio" name="toggle" id="toggle-radio-light" checked><label for="toggle-radio-light" class="tolight"><i class="fas fa-sun tolight fa-xs"></i></label>
+	              <input type="radio" name="toggle" id="toggle-radio-dark"><label for="toggle-radio-dark" class="todark"><i class="fas fa-moon todark fa-xs"></i></label>
+	              <div class="darkmode-bg"></div>
 	          </div>
-	        </li>
-	        <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">LOGIN</a>
-	          <div class="dropdown-menu dropdown-menu-end dropdown-menu-xs-start">
-	            <a class="dropdown-item" href="#">Sign-In</a>
-	            <a class="dropdown-item" href="#">Sign-Up</a>
-	            <div class="dropdown-divider"></div>
-	            <a class="dropdown-item" href="#">logout</a>
-	          </div>
-	        </li>
-	      </ul>
 	      </div>
-	  </div>
+	  </div> -->
 	  <!-- 다크모드 끝 -->
         <li class="nav-item">
-          <a class="nav-link" href="#">SNS
-            <span class="visually-hidden">(current)</span>
+          <a class="nav-link" href="#">Home
+            <!-- <span class="visually-hidden">(current)</span> -->
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">SHOP</a>
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Board</a>
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Df</a>
           <div class="dropdown-menu dropdown-menu-end dropdown-menu-xs-start">
-            <a class="dropdown-item" href="#">MAGAZIN</a>
-            <a class="dropdown-item" href="#">REVIEW</a>
-            <a class="dropdown-item" href="/lookst/board/list">NOTICE</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">LOGIN</a>
-          <div class="dropdown-menu dropdown-menu-end dropdown-menu-xs-start">
-            <a class="dropdown-item" href="#">Sign-In</a>
-            <a class="dropdown-item" href="#">Sign-Up</a>
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">logout</a>
+            <a class="dropdown-item" href="#">Separated link</a>
           </div>
         </li>
       </ul>
