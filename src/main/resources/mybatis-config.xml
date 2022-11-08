@@ -4,5 +4,7 @@
   "https://mybatis.org/dtd/mybatis-3-config.dtd">
   
 <configuration>
-	
+	<typeAliases>
+		<typeAlias alias="AdminDto" type="kr.co.lookst.admin.domain.AdminDto"/>
+	</typeAliases>
 </configuration>
