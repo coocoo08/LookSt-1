@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.co.heart.dao.BoardMapper">
+	<sql id="selectFromBoard">
+		SELECT bno, title, content, writer, view_cnt, comment_cnt,
+		reg_date
+		FROM t_board
+	</sql>
+
+	<select id="select" parameterType="int" resultType="BoardDto">
+		<include refid="selectFromBoard" />
+		where bno = #{bno}
+	</select>
+	<delete id="deleteALL">
+		delete from t_Board
+	</delete>
+
+
+	<insert id="insert" parameterType="BoardDto">
+		INSERT INTO t_board
+		(title,
+		content, writer)
+		VALUES
+		(#{title}, #{content}, #{writer})
+	</insert>
+
+	<select id="count" resultType="int">
+		select count(*) from t_board
+	</select>
+
+	<select id="selectPage" parameterType="map"
+		resultType="BoardDto">
+		<include refid="selectFromBoard" />
+		order by reg_date desc, bno desc
+		limit #{pageSize} offset #{offset}
+	</select>
+
+	<update id="increaseViewCnt" parameterType="int">
+		update t_board
+		set view_cnt = view_cnt + 1
+		where bno = #{bno}
+	</update>
+
+</mapper>
