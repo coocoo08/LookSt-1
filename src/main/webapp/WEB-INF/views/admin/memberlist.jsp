@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +8,7 @@
 <title>Insert title here</title>
 	<%-- <link href="${pageContext.request.contextPath }/resources/admin/css/demo.css" rel="stylesheet"> --%>
 	<link href="${pageContext.request.contextPath }/resources/admin/css/tablesaw.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath }/resources/admin/css/memberlist.css" rel="stylesheet">
 </head>
 <body>
 <%@ include file="/WEB-INF/views/fix/adminheader.jsp" %>
@@ -16,7 +17,7 @@
 			<h2 class="col-auto my-5">회원 관리</h2>
 		</div>
 		<div class="container-sm">
-			<table class="tablesaw tablesaw-stack table admintable" data-tablesaw-mode="stack">
+			<table id="table-width" class="tablesaw tablesaw-stack table admintable" data-tablesaw-mode="stack">
 				<thead>
 					<tr class="table-primary">
 						<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist">프로필</th>
@@ -30,76 +31,194 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td class="profile"><img href=""></td>
-						<td class="id"><a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">Avatar</a></td>
-						<td class="name">2009</td>
-						<td class="since">83%</td>
-						<td class="title">$2.7B</td>
-						<td class="title">$2.7B</td>
-						<td class="title">$2.7B</td>
+						<td class="profile" id="profile"><img class="rounded-circle" id="profile-result" src="https://item.kakaocdn.net/do/a1866850b14ae47d0a2fd61f409dfc057154249a3890514a43687a85e6b6cc82" alt=""/></td>
+						<td class="id"><a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">ezen</a></td>
+						<td class="name">김현민</td>
+						<td class="since">2022-11-08</td>
+						<td class="최근접속일">2022-11-08</td>
+						<td class="권한">
+							<select class="form-select form-select-sm" aria-label=".form-select-sm example" name="Auth">
+				              <option value="">권한</option>
+				              <option value="member">일반회원</option>
+				              <option value="seller">판매자</option>
+				              <option value="admin">관리자</option>
+				            </select>
+						</td>
+						<td class="관리">
+							<input class="btn btn-success btn-sm me-md-2"  tabindex="-1" role="button" type="button" value="수정" />
+	            			<input class="btn btn-danger btn-sm"  tabindex="-1" role="button" type="button" value="삭제" />
+						</td>
 					</tr>
 					<tr>
-						<td class="title"><a href="http://en.wikipedia.org/wiki/Titanic_(1997_film)">Titanic</a></td>
-						<td>2</td>
-						<td>1997</td>
-						<td>88%</td>
-						<td>$2.1B</td>
+						<td class="profile" id="profile"><img class="rounded-circle" id="profile-result" src="https://item.kakaocdn.net/do/a1866850b14ae47d0a2fd61f409dfc057154249a3890514a43687a85e6b6cc82" alt=""/></td>
+						<td class="id"><a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">ezen</a></td>
+						<td class="name">김현민</td>
+						<td class="since">2022-11-08</td>
+						<td class="최근접속일">2022-11-08</td>
+						<td class="권한">
+							<select class="form-select form-select-sm" aria-label=".form-select-sm example" name="Auth">
+				              <option value="">권한</option>
+				              <option value="member">일반회원</option>
+				              <option value="seller">판매자</option>
+				              <option value="admin">관리자</option>
+				            </select>
+						</td>
+						<td class="관리">
+							<input class="btn btn-success btn-sm me-md-2"  tabindex="-1" role="button" type="button" value="수정" />
+	            			<input class="btn btn-danger btn-sm"  tabindex="-1" role="button" type="button" value="삭제" />
+						</td>
 					</tr>
 					<tr>
-						<td class="title"><a href="http://en.wikipedia.org/wiki/The_Avengers_(2012_film)">The Avengers</a></td>
-						<td>3</td>
-						<td>2012</td>
-						<td>92%</td>
-						<td>$1.5B</td>
+						<td class="profile" id="profile"><img class="rounded-circle" id="profile-result" src="https://item.kakaocdn.net/do/a1866850b14ae47d0a2fd61f409dfc057154249a3890514a43687a85e6b6cc82" alt=""/></td>
+						<td class="id"><a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">ezen</a></td>
+						<td class="name">김현민</td>
+						<td class="since">2022-11-08</td>
+						<td class="최근접속일">2022-11-08</td>
+						<td class="권한">
+							<select class="form-select form-select-sm" aria-label=".form-select-sm example" name="Auth">
+				              <option value="">권한</option>
+				              <option value="member">일반회원</option>
+				              <option value="seller">판매자</option>
+				              <option value="admin">관리자</option>
+				            </select>
+						</td>
+						<td class="관리">
+							<input class="btn btn-success btn-sm me-md-2"  tabindex="-1" role="button" type="button" value="수정" />
+	            			<input class="btn btn-danger btn-sm"  tabindex="-1" role="button" type="button" value="삭제" />
+						</td>
 					</tr>
 					<tr>
-						<td class="title"><a href="http://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_2">Harry Potter and the Deathly Hallows—Part 2</a></td>
-						<td>4</td>
-						<td>2011</td>
-						<td>96%</td>
-						<td>$1.3B</td>
+						<td class="profile" id="profile"><img class="rounded-circle" id="profile-result" src="https://item.kakaocdn.net/do/a1866850b14ae47d0a2fd61f409dfc057154249a3890514a43687a85e6b6cc82" alt=""/></td>
+						<td class="id"><a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">ezen</a></td>
+						<td class="name">김현민</td>
+						<td class="since">2022-11-08</td>
+						<td class="최근접속일">2022-11-08</td>
+						<td class="권한">
+							<select class="form-select form-select-sm" aria-label=".form-select-sm example" name="Auth">
+				              <option value="">권한</option>
+				              <option value="member">일반회원</option>
+				              <option value="seller">판매자</option>
+				              <option value="admin">관리자</option>
+				            </select>
+						</td>
+						<td class="관리">
+							<input class="btn btn-success btn-sm me-md-2"  tabindex="-1" role="button" type="button" value="수정" />
+	            			<input class="btn btn-danger btn-sm"  tabindex="-1" role="button" type="button" value="삭제" />
+						</td>
 					</tr>
 					<tr>
-						<td class="title"><a href="http://en.wikipedia.org/wiki/Frozen_(2013_film)">Frozen</a></td>
-						<td>5</td>
-						<td>2013</td>
-						<td>89%</td>
-						<td>$1.2B</td>
+						<td class="profile" id="profile"><img class="rounded-circle" id="profile-result" src="https://item.kakaocdn.net/do/a1866850b14ae47d0a2fd61f409dfc057154249a3890514a43687a85e6b6cc82" alt=""/></td>
+						<td class="id"><a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">ezen</a></td>
+						<td class="name">김현민</td>
+						<td class="since">2022-11-08</td>
+						<td class="최근접속일">2022-11-08</td>
+						<td class="권한">
+							<select class="form-select form-select-sm" aria-label=".form-select-sm example" name="Auth">
+				              <option value="">권한</option>
+				              <option value="member">일반회원</option>
+				              <option value="seller">판매자</option>
+				              <option value="admin">관리자</option>
+				            </select>
+						</td>
+						<td class="관리">
+							<input class="btn btn-success btn-sm me-md-2"  tabindex="-1" role="button" type="button" value="수정" />
+	            			<input class="btn btn-danger btn-sm"  tabindex="-1" role="button" type="button" value="삭제" />
+						</td>
 					</tr>
 					<tr>
-						<td class="title"><a href="http://en.wikipedia.org/wiki/Iron_Man_3">Iron Man 3</a></td>
-						<td>6</td>
-						<td>2013</td>
-						<td>78%</td>
-						<td>$1.2B</td>
+						<td class="profile" id="profile"><img class="rounded-circle" id="profile-result" src="https://item.kakaocdn.net/do/a1866850b14ae47d0a2fd61f409dfc057154249a3890514a43687a85e6b6cc82" alt=""/></td>
+						<td class="id"><a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">ezen</a></td>
+						<td class="name">김현민</td>
+						<td class="since">2022-11-08</td>
+						<td class="최근접속일">2022-11-08</td>
+						<td class="권한">
+							<select class="form-select form-select-sm" aria-label=".form-select-sm example" name="Auth">
+				              <option value="">권한</option>
+				              <option value="member">일반회원</option>
+				              <option value="seller">판매자</option>
+				              <option value="admin">관리자</option>
+				            </select>
+						</td>
+						<td class="관리">
+							<input class="btn btn-success btn-sm me-md-2"  tabindex="-1" role="button" type="button" value="수정" />
+	            			<input class="btn btn-danger btn-sm"  tabindex="-1" role="button" type="button" value="삭제" />
+						</td>
 					</tr>
 					<tr>
-						<td class="title"><a href="http://en.wikipedia.org/wiki/Transformers:_Dark_of_the_Moon">Transformers: Dark of the Moon</a></td>
-						<td>7</td>
-						<td>2011</td>
-						<td>36%</td>
-						<td>$1.1B</td>
+						<td class="profile" id="profile"><img class="rounded-circle" id="profile-result" src="https://item.kakaocdn.net/do/a1866850b14ae47d0a2fd61f409dfc057154249a3890514a43687a85e6b6cc82" alt=""/></td>
+						<td class="id"><a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">ezen</a></td>
+						<td class="name">김현민</td>
+						<td class="since">2022-11-08</td>
+						<td class="최근접속일">2022-11-08</td>
+						<td class="권한">
+							<select class="form-select form-select-sm" aria-label=".form-select-sm example" name="Auth">
+				              <option value="">권한</option>
+				              <option value="member">일반회원</option>
+				              <option value="seller">판매자</option>
+				              <option value="admin">관리자</option>
+				            </select>
+						</td>
+						<td class="관리">
+							<input class="btn btn-success btn-sm me-md-2"  tabindex="-1" role="button" type="button" value="수정" />
+	            			<input class="btn btn-danger btn-sm"  tabindex="-1" role="button" type="button" value="삭제" />
+						</td>
 					</tr>
 					<tr>
-						<td class="title"><a href="http://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King">The Lord of the Rings: The Return of the King</a></td>
-						<td>8</td>
-						<td>2003</td>
-						<td>95%</td>
-						<td>$1.1B</td>
+						<td class="profile" id="profile"><img class="rounded-circle" id="profile-result" src="https://item.kakaocdn.net/do/a1866850b14ae47d0a2fd61f409dfc057154249a3890514a43687a85e6b6cc82" alt=""/></td>
+						<td class="id"><a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">ezen</a></td>
+						<td class="name">김현민</td>
+						<td class="since">2022-11-08</td>
+						<td class="최근접속일">2022-11-08</td>
+						<td class="권한">
+							<select class="form-select form-select-sm" aria-label=".form-select-sm example" name="Auth">
+				              <option value="">권한</option>
+				              <option value="member">일반회원</option>
+				              <option value="seller">판매자</option>
+				              <option value="admin">관리자</option>
+				            </select>
+						</td>
+						<td class="관리">
+							<input class="btn btn-success btn-sm me-md-2"  tabindex="-1" role="button" type="button" value="수정" />
+	            			<input class="btn btn-danger btn-sm"  tabindex="-1" role="button" type="button" value="삭제" />
+						</td>
 					</tr>
 					<tr>
-						<td class="title"><a href="http://en.wikipedia.org/wiki/Skyfall">Skyfall</a></td>
-						<td>9</td>
-						<td>2012</td>
-						<td>92%</td>
-						<td>$1.1B</td>
+						<td class="profile" id="profile"><img class="rounded-circle" id="profile-result" src="https://item.kakaocdn.net/do/a1866850b14ae47d0a2fd61f409dfc057154249a3890514a43687a85e6b6cc82" alt=""/></td>
+						<td class="id"><a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">ezen</a></td>
+						<td class="name">김현민</td>
+						<td class="since">2022-11-08</td>
+						<td class="최근접속일">2022-11-08</td>
+						<td class="권한">
+							<select class="form-select form-select-sm" aria-label=".form-select-sm example" name="Auth">
+				              <option value="">권한</option>
+				              <option value="member">일반회원</option>
+				              <option value="seller">판매자</option>
+				              <option value="admin">관리자</option>
+				            </select>
+						</td>
+						<td class="관리">
+							<input class="btn btn-success btn-sm me-md-2"  tabindex="-1" role="button" type="button" value="수정" />
+	            			<input class="btn btn-danger btn-sm"  tabindex="-1" role="button" type="button" value="삭제" />
+						</td>
 					</tr>
 					<tr>
-						<td class="title"><a href="http://en.wikipedia.org/wiki/Transformers:_Age_of_Extinction">Transformers: Age of Extinction</a></td>
-						<td>10</td>
-						<td>2014</td>
-						<td>18%</td>
-						<td>$1.0B</td>
+						<td class="profile" id="profile"><img class="rounded-circle" id="profile-result" src="https://item.kakaocdn.net/do/a1866850b14ae47d0a2fd61f409dfc057154249a3890514a43687a85e6b6cc82" alt=""/></td>
+						<td class="id"><a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">ezen</a></td>
+						<td class="name">김현민</td>
+						<td class="since">2022-11-08</td>
+						<td class="최근접속일">2022-11-08</td>
+						<td class="권한">
+							<select class="form-select form-select-sm" aria-label=".form-select-sm example" name="Auth">
+				              <option value="">권한</option>
+				              <option value="member">일반회원</option>
+				              <option value="seller">판매자</option>
+				              <option value="admin">관리자</option>
+				            </select>
+						</td>
+						<td class="관리">
+							<input class="btn btn-success btn-sm me-md-2"  tabindex="-1" role="button" type="button" value="수정" />
+	            			<input class="btn btn-danger btn-sm"  tabindex="-1" role="button" type="button" value="삭제" />
+						</td>
 					</tr>
 				</tbody>
 			</table>
