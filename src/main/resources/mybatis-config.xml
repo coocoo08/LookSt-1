@@ -4,5 +4,7 @@
   "https://mybatis.org/dtd/mybatis-3-config.dtd">
   
 <configuration>
-	
+	<typeAliases>
+		<typeAlias alias="BoardDto" type="kr.co.lookst.board.domain.BoardDto"/>
+	</typeAliases>
 </configuration>
