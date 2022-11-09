@@ -100,13 +100,9 @@
 		<div class="card" style="width: 18rem;">
   			<img src="${pageContext.request.contextPath }/resources/post/img/master.jpg" class="card-img-top rounded-4" alt="...">
  			<div class="card-body">
-			    <div id="profile_info"> 
-			    	<button type="button" class="btn btn-outline-light">
-			    		<img src="${pageContext.request.contextPath }/resources/post/img/프사2.jpg" id="profile_img" class="rounded-circle">
-			    	</button>
-<!--               			<div class="profile_nick d-inline-flex p-2"> -->
-<!--               				<p>MyMelody</p> -->
-<!--               			</div> -->
+			    <div id="profile_info" class="d-flex justify-content-between"> 
+			    	<img src="${pageContext.request.contextPath }/resources/post/img/프사2.jpg" onclick="location.href='./'" id="profile_img" class="rounded-circle">
+			    	<p class="col-auto" onclick="location.href='./'">MyMelody</p>
             	</div>
             	
             	<div class="main_hash d-inline-flex p-2">
