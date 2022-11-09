@@ -15,13 +15,77 @@
    		height: 40px;
    		border-radius: 50%
 	}
+	.like_comment 
+	button:first-child
+	.active {
+		color: red;
+		display: flex;
+		height: 40px;
+		margin-top: 4px;
+		background-color: transparent;
+		width: 40px;
+		font-size: 25px;
+		margin-right: 10px;
+		border: 0;
+		cursor: pointer;
+	}
 	
 	</style>
-
+	
 </head>
 <body>
 <%@ include file="/WEB-INF/views/fix/header.jsp" %>
+	
+	<script type="text/javascript">
+		function clickBtn() {
+			let _buttonI = event.target;
+	
+			if (_buttonI.classList.contains("far")) {
+				_buttonI.classList.add("fas");
+				_buttonI.classList.add("active");
+				_buttonI.classList.remove("far");
+			} else {
+				_buttonI.classList.remove("fas");
+				_buttonI.classList.remove("active");
+				_buttonI.classList.add("far");
+			}
+		}
+		
+		function likeOrUnLike(imageId) {
+			let likeIcon = $("#like_icon_"+imageId);
+			if (likeIcon.hasClass("far")) {
+				$.ajax({
+					type: "POST",
+					url: `/image/${imageId}/likes`,
+					dataType: "json"
+				 }).done(res=>{
+					  let likeCountStr  = $(`#like_count_${imageId}`).text();
+					  let likeCount = Number(likeCountStr) + 1;
+					  $(`#like_count_${imageId}`).text(likeCount);
+					    
+					  likeIcon.addClass("fas");
+					  likeIcon.addClass("active");
+					  likeIcon.removeClass("far");
+				 });
+			} else {
+				  $.ajax({
+					  type: "DELETE",
+					  url: `/image/${imageId}/likes`,
+					  dataType: "json"
+				  }).done(res=>{
+					    let likeCountStr  = $(`#like_count_${imageId}`).text();
+					    let likeCount = Number(likeCountStr) - 1;
+					    $(`#like_count_${imageId}`).text(likeCount);
+					    
+					    likeIcon.removeClass("fas");
+					    likeIcon.removeClass("active");
+					    likeIcon.addClass("far");
+				  });  
 
+			  }
+			}
+	</script>
+	
 	<div class="container">
 	<!-- 상단 인기/최신/팔로우 탭 -->
 		<ul class="nav nav-pills col-4 mx-auto my-4" id="pills-tab" role="tablist">
@@ -66,6 +130,10 @@
             	<div class="main_hash d-inline-flex p-2">
             		<a href="">#LookSt</a> #스타일컬렉터 #OOTD</p>
             	</div>
+			    <div class="like_comment">
+			    	<button onclick="clickBtn()"><i class="far fa-heart"></i></button>
+			    </div>
+			    
 			    <div>
 			    	<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 			    </div>
