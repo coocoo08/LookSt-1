@@ -37,53 +37,32 @@
 <%@ include file="/WEB-INF/views/fix/header.jsp" %>
 	
 	<script type="text/javascript">
-		function clickBtn() {
-			let _buttonI = event.target;
-	
-			if (_buttonI.classList.contains("far")) {
-				_buttonI.classList.add("fas");
-				_buttonI.classList.add("active");
-				_buttonI.classList.remove("far");
-			} else {
-				_buttonI.classList.remove("fas");
-				_buttonI.classList.remove("active");
-				_buttonI.classList.add("far");
-			}
-		}
-		
-		function likeOrUnLike(imageId) {
-			let likeIcon = $("#like_icon_"+imageId);
-			if (likeIcon.hasClass("far")) {
-				$.ajax({
-					type: "POST",
-					url: `/image/${imageId}/likes`,
-					dataType: "json"
-				 }).done(res=>{
-					  let likeCountStr  = $(`#like_count_${imageId}`).text();
-					  let likeCount = Number(likeCountStr) + 1;
-					  $(`#like_count_${imageId}`).text(likeCount);
-					    
-					  likeIcon.addClass("fas");
-					  likeIcon.addClass("active");
-					  likeIcon.removeClass("far");
-				 });
-			} else {
-				  $.ajax({
-					  type: "DELETE",
-					  url: `/image/${imageId}/likes`,
-					  dataType: "json"
-				  }).done(res=>{
-					    let likeCountStr  = $(`#like_count_${imageId}`).text();
-					    let likeCount = Number(likeCountStr) - 1;
-					    $(`#like_count_${imageId}`).text(likeCount);
-					    
-					    likeIcon.removeClass("fas");
-					    likeIcon.removeClass("active");
-					    likeIcon.addClass("far");
-				  });  
+	function clickBtn() {
+		   let _buttonI = event.target;
+		   const childElement = _buttonI.firstChild;
 
-			  }
-			}
+		   if (_buttonI.classList.contains("likeBtn")) {
+		      if (childElement.classList.contains("far")) {
+		         childElement.classList.add("fas");
+		         childElement.classList.add("active");
+		         childElement.classList.remove("far");
+		      } else {
+		         childElement.classList.remove("fas");
+		         childElement.classList.remove("active");
+		         childElement.classList.add("far");
+		      }
+		   } else {
+		      if (_buttonI.classList.contains("far")) {
+		         _buttonI.classList.add("fas");
+		         _buttonI.classList.add("active");
+		         _buttonI.classList.remove("far");
+		      } else {
+		         _buttonI.classList.remove("fas");
+		         _buttonI.classList.remove("active");
+		         _buttonI.classList.add("far");
+		      }
+		   }
+		}
 	</script>
 	
 	<div class="container">
@@ -122,11 +101,14 @@
   			<img src="${pageContext.request.contextPath }/resources/post/img/master.jpg" class="card-img-top rounded-4" alt="...">
  			<div class="card-body">
 			    <div id="profile_info"> 
-              		<img src="${pageContext.request.contextPath }/resources/post/img/프사2.jpg" id="profile_img" class="rounded-circle">
-              		<div class="profile_nick d-inline-flex p-2">
-              			<p>MyMelody</p>
-              		</div>
+			    	<button type="button" class="btn btn-outline-light">
+			    		<img src="${pageContext.request.contextPath }/resources/post/img/프사2.jpg" id="profile_img" class="rounded-circle">
+			    	</button>
+<!--               			<div class="profile_nick d-inline-flex p-2"> -->
+<!--               				<p>MyMelody</p> -->
+<!--               			</div> -->
             	</div>
+            	
             	<div class="main_hash d-inline-flex p-2">
             		<a href="">#LookSt</a> #스타일컬렉터 #OOTD</p>
             	</div>
