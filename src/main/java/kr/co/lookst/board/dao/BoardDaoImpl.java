@@ -1,5 +1,6 @@
 package kr.co.lookst.board.dao;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -16,7 +17,7 @@ public class BoardDaoImpl implements BoardDao {
 	
 	@Autowired
 	private SqlSession session;
-	private static String namespace = "kr.co.heart.dao.BoardMapper.";
+	private static String namespace = "kr.co.lookst.board.dao.BoardMapper.";
 
 	@Override
 	public BoardDto select(Integer bno) throws Exception {
@@ -51,6 +52,14 @@ public class BoardDaoImpl implements BoardDao {
 	@Override
 	public int increaseViewCnt(Integer bno) throws Exception {
 		return session.update(namespace+"increaseViewCnt", bno);
+	}
+
+	@Override
+	public int delete(Integer bno, String writer) throws Exception {
+		Map map = new HashMap();
+		map.put("bno", bno);
+		map.put("writer", writer);
+		return session.delete(namespace+"delete", map);
 	}
 
 }
