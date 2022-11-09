@@ -19,6 +19,8 @@ public interface BoardDao {
 
 	int increaseViewCnt(Integer bno) throws Exception;
 
+	int delete(Integer bno, String writer) throws Exception;
+
 
 	
 }
