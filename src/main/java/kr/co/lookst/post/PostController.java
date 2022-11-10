@@ -12,4 +12,10 @@ public class PostController {
 	public String sns_main() {
 		return "/post/sns_list";
 	}
+	
+	@GetMapping("/mylist")
+	public String sns_list() {
+		return "/post/my_list";
+	}
 }
+
